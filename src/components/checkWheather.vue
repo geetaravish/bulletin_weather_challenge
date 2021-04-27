@@ -1,6 +1,6 @@
 <template>
   <div class="check-weather" >
-      <div class="check-weather-text">Weather in your city(Enter Zipcode)</div>
+      <div class="check-weather-text">Weather in your city (Enter Zipcode)</div>
       <div class="check-weather-input">
        <input type="text" v-model="zipCode" id="zipCode" @blur="validiteZipCode()" @keyup.enter="validiteZipCode()" placeholder="Enter Zipcode" />
         <button id="checkWeather" type="submit" class="btn-search" @click="validiteZipCode()">Check Weather</button>

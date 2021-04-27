@@ -9,13 +9,7 @@
 import { mapState } from 'vuex';
 export default {
   name: "currentWeather",
-  data() {
-    return {
-    };
-  },
-  components: {
-  },
-   computed: {
+  computed: {
       ...mapState("wheatherState", ["wheatherData"]),
       currentCity() {
         let city = ""
@@ -25,11 +19,6 @@ export default {
         return city;
       }
   },
-  created() {
-  },
-  methods: {
-  }
- 
 };
 </script>
 <style  >

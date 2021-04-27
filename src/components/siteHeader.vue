@@ -9,7 +9,7 @@
             <li><a href="#0">Blog</a></li>
             <li><a href="#0">Marketplace</a></li>
             <li><a href="#0">Support</a></li>
-            <li><a href="#0" class="sign-out-link">Sign in</a></li>
+            <li><a href="#0">Sign in</a></li>
           </ul>
         </div>
 </template>
@@ -28,6 +28,24 @@ export default {
 .siteHeader {
   background-color: #48484a;
 }
+ .siteHeader > ul {
+     list-style: none;
+     display: flex;
+     align-items: center;
+  }
+ .siteHeader > ul > li {
+      width: auto;
+      padding: 5px;
+      font-weight: bold;
+      color: #CDD0D0;
+      background: darken(#CDD0D0, 40%);
+  }
+ .siteHeader > ul > li > a {
+    text-decoration: none;
+    color: #CDD0D0;
+    padding: 5px;
+    display: inline-block;
+  }
 
 .logo {
   text-decoration: none;
@@ -38,31 +56,5 @@ export default {
   padding: 10px;
   width: 94px;
   height: 40px;
-}
- ul {
-     list-style: none;
-     display: flex;
-     align-items: center;
-  }
- ul > li {
-      width: auto;
-      padding: 5px;
-      font-weight: bold;
-      color: #CDD0D0;
-      background: darken(#CDD0D0, 40%);
-  }
-
- ul > li > a {
-    text-decoration: none;
-    color: #CDD0D0;
-    padding: 5px;
-    display: inline-block;
-  }
-
-.sign-out-link {
-  color: #f2f2f2;
-  font-size: 0.8rem;
-  margin-left: 10px;
-  text-transform: uppercase;
 }
 </style>

@@ -13,17 +13,6 @@
 
 export default {
   name: "siteHeader",
-  data() {
-    return {
-     
-    };
-  },
-  components: {
-    
-  },
-  methods: {
-  
-  }
 };
 </script>
 

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div>Day {{idx+1}}</div>
-    <img class="img-icon" :src="getDayIcon"/>{{description}}
+    <img class="day-icon" :src="getDayIcon"/>{{description}}
   </div>  
 </template>
 <script>
@@ -42,14 +41,9 @@ export default {
 };
 </script>
 <style>
-.img-icon{
+.day-icon{
   width: 50px;
   height: 50px;
   overflow: hidden;
-}
-div {
-      color: #000000b3;
-      line-height: 20px;
-
 }
 </style>
